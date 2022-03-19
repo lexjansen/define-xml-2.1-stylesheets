@@ -1,0 +1,49 @@
+
+Transform -s:.\xml\definev21-adam.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-adam_ja.html  
+java net.sf.saxon.Transform -s:.\xml\definev21-adam.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-adam_ja.html -versionmsg:off interfaceLang=ja displayCommentsTable="0" displayPrefix="0" displayLengthDFormatSD="0" 
+
+Transform -s:.\xml\definev21-adam.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-adam_zh.html  
+java net.sf.saxon.Transform -s:.\xml\definev21-adam.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-adam_zh.html -versionmsg:off interfaceLang=zh displayCommentsTable="0" displayPrefix="0" displayLengthDFormatSD="0" 
+
+Transform -s:.\xml\definev21-adam.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-adam_en.html  
+java net.sf.saxon.Transform -s:.\xml\definev21-adam.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-adam_en.html -versionmsg:off interfaceLang=en displayCommentsTable="0" displayPrefix="0" displayLengthDFormatSD="0" 
+
+Transform -s:.\xml\definev21-adam.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-adam_default.html  
+java net.sf.saxon.Transform -s:.\xml\definev21-adam.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-adam_default.html -versionmsg:off displayCommentsTable="0" displayPrefix="0" displayLengthDFormatSD="0" 
+
+Transform -s:.\xml\definev21-sdtm.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-sdtm_ja.html  
+java net.sf.saxon.Transform -s:.\xml\definev21-sdtm.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-sdtm_ja.html -versionmsg:off interfaceLang=ja displayCommentsTable="0" displayPrefix="0" displayLengthDFormatSD="0" 
+
+Transform -s:.\xml\definev21-sdtm.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-sdtm_zh.html  
+java net.sf.saxon.Transform -s:.\xml\definev21-sdtm.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-sdtm_zh.html -versionmsg:off interfaceLang=zh displayCommentsTable="0" displayPrefix="0" displayLengthDFormatSD="0" 
+
+Transform -s:.\xml\definev21-sdtm.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-sdtm_en.html  
+java net.sf.saxon.Transform -s:.\xml\definev21-sdtm.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-sdtm_en.html -versionmsg:off interfaceLang=en displayCommentsTable="0" displayPrefix="0" displayLengthDFormatSD="0" 
+
+Transform -s:.\xml\definev21-sdtm.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-sdtm_default.html  
+java net.sf.saxon.Transform -s:.\xml\definev21-sdtm.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-sdtm_default.html -versionmsg:off displayCommentsTable="0" displayPrefix="0" displayLengthDFormatSD="0" 
+
+Transform -s:.\xml\definev21-adam.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-adam.parameters_ja.html  
+java net.sf.saxon.Transform -s:.\xml\definev21-adam.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-adam.parameters_ja.html -versionmsg:off interfaceLang=ja displayCommentsTable="1" displayPrefix="1" displayLengthDFormatSD="1" 
+
+Transform -s:.\xml\definev21-adam.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-adam.parameters_zh.html  
+java net.sf.saxon.Transform -s:.\xml\definev21-adam.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-adam.parameters_zh.html -versionmsg:off interfaceLang=zh displayCommentsTable="1" displayPrefix="1" displayLengthDFormatSD="1" 
+
+Transform -s:.\xml\definev21-adam.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-adam.parameters_en.html  
+java net.sf.saxon.Transform -s:.\xml\definev21-adam.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-adam.parameters_en.html -versionmsg:off interfaceLang=en displayCommentsTable="1" displayPrefix="1" displayLengthDFormatSD="1" 
+
+Transform -s:.\xml\definev21-adam.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-adam.parameters_default.html  
+java net.sf.saxon.Transform -s:.\xml\definev21-adam.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-adam.parameters_default.html -versionmsg:off displayCommentsTable="1" displayPrefix="1" displayLengthDFormatSD="1" 
+
+Transform -s:.\xml\definev21-sdtm.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-sdtm.parameters_ja.html  
+java net.sf.saxon.Transform -s:.\xml\definev21-sdtm.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-sdtm.parameters_ja.html -versionmsg:off interfaceLang=ja displayCommentsTable="1" displayPrefix="1" displayLengthDFormatSD="1" 
+
+Transform -s:.\xml\definev21-sdtm.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-sdtm.parameters_zh.html  
+java net.sf.saxon.Transform -s:.\xml\definev21-sdtm.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-sdtm.parameters_zh.html -versionmsg:off interfaceLang=zh displayCommentsTable="1" displayPrefix="1" displayLengthDFormatSD="1" 
+
+Transform -s:.\xml\definev21-sdtm.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-sdtm.parameters_en.html  
+java net.sf.saxon.Transform -s:.\xml\definev21-sdtm.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-sdtm.parameters_en.html -versionmsg:off interfaceLang=en displayCommentsTable="1" displayPrefix="1" displayLengthDFormatSD="1" 
+
+Transform -s:.\xml\definev21-sdtm.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-sdtm.parameters_default.html  
+java net.sf.saxon.Transform -s:.\xml\definev21-sdtm.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-sdtm.parameters_default.html -versionmsg:off displayCommentsTable="1" displayPrefix="1" displayLengthDFormatSD="1" 
+
