@@ -1,49 +1,233 @@
 
 Transform -s:.\xml\definev21-adam.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-adam_ja.html  
-java net.sf.saxon.Transform -s:.\xml\definev21-adam.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-adam_ja.html -versionmsg:off interfaceLang=ja displayCommentsTable="0" displayPrefix="0" displayLengthDFormatSD="0" 
+java net.sf.saxon.Transform -t -s:.\xml\definev21-adam.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-adam_ja.html -versionmsg:off interfaceLang=ja displayCommentsTable="0" displayPrefix="0" displayLengthDFormatSD="0" 
+SaxonJ-HE 11.5 from Saxonica
+Java version 1.8.0_92
+Stylesheet compilation time: 707.8244ms
+Processing file:/C:/_github/lexjansen/define-xml-2.1-stylesheets/localization/./xml/definev21-adam.xml
+Using parser com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser
+Building tree for file:/C:/_github/lexjansen/define-xml-2.1-stylesheets/localization/./xml/definev21-adam.xml using class net.sf.saxon.tree.tiny.TinyBuilder
+Tree built in 22.0591ms
+Tree size: 5183 nodes, 14908 characters, 3029 attributes
+Building tree for file:/C:/_github/lexjansen/define-xml-2.1-stylesheets/localization/stylesheets/dictionary.xml using class net.sf.saxon.tree.tiny.TinyBuilder
+Tree built in 2.1714ms
+Tree size: 775 nodes, 1036 characters, 252 attributes
+Execution time: 271.8049ms
+Memory used: 129Mb
 
 Transform -s:.\xml\definev21-adam.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-adam_zh.html  
-java net.sf.saxon.Transform -s:.\xml\definev21-adam.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-adam_zh.html -versionmsg:off interfaceLang=zh displayCommentsTable="0" displayPrefix="0" displayLengthDFormatSD="0" 
+java net.sf.saxon.Transform -t -s:.\xml\definev21-adam.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-adam_zh.html -versionmsg:off interfaceLang=zh displayCommentsTable="0" displayPrefix="0" displayLengthDFormatSD="0" 
+SaxonJ-HE 11.5 from Saxonica
+Java version 1.8.0_92
+Stylesheet compilation time: 682.3008ms
+Processing file:/C:/_github/lexjansen/define-xml-2.1-stylesheets/localization/./xml/definev21-adam.xml
+Using parser com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser
+Building tree for file:/C:/_github/lexjansen/define-xml-2.1-stylesheets/localization/./xml/definev21-adam.xml using class net.sf.saxon.tree.tiny.TinyBuilder
+Tree built in 22.4718ms
+Tree size: 5183 nodes, 14908 characters, 3029 attributes
+Building tree for file:/C:/_github/lexjansen/define-xml-2.1-stylesheets/localization/stylesheets/dictionary.xml using class net.sf.saxon.tree.tiny.TinyBuilder
+Tree built in 2.2326ms
+Tree size: 775 nodes, 1036 characters, 252 attributes
+Execution time: 275.4398ms
+Memory used: 129Mb
 
 Transform -s:.\xml\definev21-adam.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-adam_en.html  
-java net.sf.saxon.Transform -s:.\xml\definev21-adam.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-adam_en.html -versionmsg:off interfaceLang=en displayCommentsTable="0" displayPrefix="0" displayLengthDFormatSD="0" 
+java net.sf.saxon.Transform -t -s:.\xml\definev21-adam.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-adam_en.html -versionmsg:off interfaceLang=en displayCommentsTable="0" displayPrefix="0" displayLengthDFormatSD="0" 
+SaxonJ-HE 11.5 from Saxonica
+Java version 1.8.0_92
+Stylesheet compilation time: 697.9933ms
+Processing file:/C:/_github/lexjansen/define-xml-2.1-stylesheets/localization/./xml/definev21-adam.xml
+Using parser com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser
+Building tree for file:/C:/_github/lexjansen/define-xml-2.1-stylesheets/localization/./xml/definev21-adam.xml using class net.sf.saxon.tree.tiny.TinyBuilder
+Tree built in 23.5193ms
+Tree size: 5183 nodes, 14908 characters, 3029 attributes
+Execution time: 229.9991ms
+Memory used: 126Mb
 
 Transform -s:.\xml\definev21-adam.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-adam_default.html  
-java net.sf.saxon.Transform -s:.\xml\definev21-adam.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-adam_default.html -versionmsg:off displayCommentsTable="0" displayPrefix="0" displayLengthDFormatSD="0" 
+java net.sf.saxon.Transform -t  -s:.\xml\definev21-adam.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-adam_default.html -versionmsg:off displayCommentsTable="0" displayPrefix="0" displayLengthDFormatSD="0" 
+SaxonJ-HE 11.5 from Saxonica
+Java version 1.8.0_92
+Stylesheet compilation time: 682.4342ms
+Processing file:/C:/_github/lexjansen/define-xml-2.1-stylesheets/localization/./xml/definev21-adam.xml
+Using parser com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser
+Building tree for file:/C:/_github/lexjansen/define-xml-2.1-stylesheets/localization/./xml/definev21-adam.xml using class net.sf.saxon.tree.tiny.TinyBuilder
+Tree built in 22.693ms
+Tree size: 5183 nodes, 14908 characters, 3029 attributes
+Execution time: 224.0515ms
+Memory used: 124Mb
 
 Transform -s:.\xml\definev21-sdtm.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-sdtm_ja.html  
-java net.sf.saxon.Transform -s:.\xml\definev21-sdtm.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-sdtm_ja.html -versionmsg:off interfaceLang=ja displayCommentsTable="0" displayPrefix="0" displayLengthDFormatSD="0" 
+java net.sf.saxon.Transform -t -s:.\xml\definev21-sdtm.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-sdtm_ja.html -versionmsg:off interfaceLang=ja displayCommentsTable="0" displayPrefix="0" displayLengthDFormatSD="0" 
+SaxonJ-HE 11.5 from Saxonica
+Java version 1.8.0_92
+Stylesheet compilation time: 693.1397ms
+Processing file:/C:/_github/lexjansen/define-xml-2.1-stylesheets/localization/./xml/definev21-sdtm.xml
+Using parser com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser
+Building tree for file:/C:/_github/lexjansen/define-xml-2.1-stylesheets/localization/./xml/definev21-sdtm.xml using class net.sf.saxon.tree.tiny.TinyBuilder
+Tree built in 24.1899ms
+Tree size: 5825 nodes, 12875 characters, 3809 attributes
+Building tree for file:/C:/_github/lexjansen/define-xml-2.1-stylesheets/localization/stylesheets/dictionary.xml using class net.sf.saxon.tree.tiny.TinyBuilder
+Tree built in 3.1575ms
+Tree size: 775 nodes, 1036 characters, 252 attributes
+Execution time: 333.2163ms
+Memory used: 32Mb
 
 Transform -s:.\xml\definev21-sdtm.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-sdtm_zh.html  
-java net.sf.saxon.Transform -s:.\xml\definev21-sdtm.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-sdtm_zh.html -versionmsg:off interfaceLang=zh displayCommentsTable="0" displayPrefix="0" displayLengthDFormatSD="0" 
+java net.sf.saxon.Transform -t -s:.\xml\definev21-sdtm.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-sdtm_zh.html -versionmsg:off interfaceLang=zh displayCommentsTable="0" displayPrefix="0" displayLengthDFormatSD="0" 
+SaxonJ-HE 11.5 from Saxonica
+Java version 1.8.0_92
+Stylesheet compilation time: 692.3533ms
+Processing file:/C:/_github/lexjansen/define-xml-2.1-stylesheets/localization/./xml/definev21-sdtm.xml
+Using parser com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser
+Building tree for file:/C:/_github/lexjansen/define-xml-2.1-stylesheets/localization/./xml/definev21-sdtm.xml using class net.sf.saxon.tree.tiny.TinyBuilder
+Tree built in 22.6764ms
+Tree size: 5825 nodes, 12875 characters, 3809 attributes
+Building tree for file:/C:/_github/lexjansen/define-xml-2.1-stylesheets/localization/stylesheets/dictionary.xml using class net.sf.saxon.tree.tiny.TinyBuilder
+Tree built in 3.5499ms
+Tree size: 775 nodes, 1036 characters, 252 attributes
+Execution time: 328.4034ms
+Memory used: 29Mb
 
 Transform -s:.\xml\definev21-sdtm.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-sdtm_en.html  
-java net.sf.saxon.Transform -s:.\xml\definev21-sdtm.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-sdtm_en.html -versionmsg:off interfaceLang=en displayCommentsTable="0" displayPrefix="0" displayLengthDFormatSD="0" 
+java net.sf.saxon.Transform -t -s:.\xml\definev21-sdtm.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-sdtm_en.html -versionmsg:off interfaceLang=en displayCommentsTable="0" displayPrefix="0" displayLengthDFormatSD="0" 
+SaxonJ-HE 11.5 from Saxonica
+Java version 1.8.0_92
+Stylesheet compilation time: 689.3017ms
+Processing file:/C:/_github/lexjansen/define-xml-2.1-stylesheets/localization/./xml/definev21-sdtm.xml
+Using parser com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser
+Building tree for file:/C:/_github/lexjansen/define-xml-2.1-stylesheets/localization/./xml/definev21-sdtm.xml using class net.sf.saxon.tree.tiny.TinyBuilder
+Tree built in 21.4296ms
+Tree size: 5825 nodes, 12875 characters, 3809 attributes
+Execution time: 278.2122ms
+Memory used: 21Mb
 
 Transform -s:.\xml\definev21-sdtm.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-sdtm_default.html  
-java net.sf.saxon.Transform -s:.\xml\definev21-sdtm.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-sdtm_default.html -versionmsg:off displayCommentsTable="0" displayPrefix="0" displayLengthDFormatSD="0" 
+java net.sf.saxon.Transform -t  -s:.\xml\definev21-sdtm.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-sdtm_default.html -versionmsg:off displayCommentsTable="0" displayPrefix="0" displayLengthDFormatSD="0" 
+SaxonJ-HE 11.5 from Saxonica
+Java version 1.8.0_92
+Stylesheet compilation time: 702.7365ms
+Processing file:/C:/_github/lexjansen/define-xml-2.1-stylesheets/localization/./xml/definev21-sdtm.xml
+Using parser com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser
+Building tree for file:/C:/_github/lexjansen/define-xml-2.1-stylesheets/localization/./xml/definev21-sdtm.xml using class net.sf.saxon.tree.tiny.TinyBuilder
+Tree built in 27.8349ms
+Tree size: 5825 nodes, 12875 characters, 3809 attributes
+Execution time: 294.9915ms
+Memory used: 24Mb
 
 Transform -s:.\xml\definev21-adam.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-adam.parameters_ja.html  
-java net.sf.saxon.Transform -s:.\xml\definev21-adam.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-adam.parameters_ja.html -versionmsg:off interfaceLang=ja displayCommentsTable="1" displayPrefix="1" displayLengthDFormatSD="1" 
+java net.sf.saxon.Transform -t -s:.\xml\definev21-adam.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-adam.parameters_ja.html -versionmsg:off interfaceLang=ja displayCommentsTable="1" displayPrefix="1" displayLengthDFormatSD="1" 
+SaxonJ-HE 11.5 from Saxonica
+Java version 1.8.0_92
+Stylesheet compilation time: 712.3561ms
+Processing file:/C:/_github/lexjansen/define-xml-2.1-stylesheets/localization/./xml/definev21-adam.xml
+Using parser com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser
+Building tree for file:/C:/_github/lexjansen/define-xml-2.1-stylesheets/localization/./xml/definev21-adam.xml using class net.sf.saxon.tree.tiny.TinyBuilder
+Tree built in 21.1597ms
+Tree size: 5183 nodes, 14908 characters, 3029 attributes
+Building tree for file:/C:/_github/lexjansen/define-xml-2.1-stylesheets/localization/stylesheets/dictionary.xml using class net.sf.saxon.tree.tiny.TinyBuilder
+Tree built in 2.0529ms
+Tree size: 775 nodes, 1036 characters, 252 attributes
+Execution time: 285.8751ms
+Memory used: 134Mb
 
 Transform -s:.\xml\definev21-adam.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-adam.parameters_zh.html  
-java net.sf.saxon.Transform -s:.\xml\definev21-adam.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-adam.parameters_zh.html -versionmsg:off interfaceLang=zh displayCommentsTable="1" displayPrefix="1" displayLengthDFormatSD="1" 
+java net.sf.saxon.Transform -t -s:.\xml\definev21-adam.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-adam.parameters_zh.html -versionmsg:off interfaceLang=zh displayCommentsTable="1" displayPrefix="1" displayLengthDFormatSD="1" 
+SaxonJ-HE 11.5 from Saxonica
+Java version 1.8.0_92
+Stylesheet compilation time: 681.7373ms
+Processing file:/C:/_github/lexjansen/define-xml-2.1-stylesheets/localization/./xml/definev21-adam.xml
+Using parser com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser
+Building tree for file:/C:/_github/lexjansen/define-xml-2.1-stylesheets/localization/./xml/definev21-adam.xml using class net.sf.saxon.tree.tiny.TinyBuilder
+Tree built in 23.0383ms
+Tree size: 5183 nodes, 14908 characters, 3029 attributes
+Building tree for file:/C:/_github/lexjansen/define-xml-2.1-stylesheets/localization/stylesheets/dictionary.xml using class net.sf.saxon.tree.tiny.TinyBuilder
+Tree built in 2.072ms
+Tree size: 775 nodes, 1036 characters, 252 attributes
+Execution time: 278.2813ms
+Memory used: 132Mb
 
 Transform -s:.\xml\definev21-adam.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-adam.parameters_en.html  
-java net.sf.saxon.Transform -s:.\xml\definev21-adam.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-adam.parameters_en.html -versionmsg:off interfaceLang=en displayCommentsTable="1" displayPrefix="1" displayLengthDFormatSD="1" 
+java net.sf.saxon.Transform -t -s:.\xml\definev21-adam.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-adam.parameters_en.html -versionmsg:off interfaceLang=en displayCommentsTable="1" displayPrefix="1" displayLengthDFormatSD="1" 
+SaxonJ-HE 11.5 from Saxonica
+Java version 1.8.0_92
+Stylesheet compilation time: 699.7144ms
+Processing file:/C:/_github/lexjansen/define-xml-2.1-stylesheets/localization/./xml/definev21-adam.xml
+Using parser com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser
+Building tree for file:/C:/_github/lexjansen/define-xml-2.1-stylesheets/localization/./xml/definev21-adam.xml using class net.sf.saxon.tree.tiny.TinyBuilder
+Tree built in 25.3614ms
+Tree size: 5183 nodes, 14908 characters, 3029 attributes
+Execution time: 247.283ms
+Memory used: 126Mb
 
 Transform -s:.\xml\definev21-adam.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-adam.parameters_default.html  
-java net.sf.saxon.Transform -s:.\xml\definev21-adam.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-adam.parameters_default.html -versionmsg:off displayCommentsTable="1" displayPrefix="1" displayLengthDFormatSD="1" 
+java net.sf.saxon.Transform -t -s:.\xml\definev21-adam.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-adam.parameters_default.html -versionmsg:off displayCommentsTable="1" displayPrefix="1" displayLengthDFormatSD="1" 
+SaxonJ-HE 11.5 from Saxonica
+Java version 1.8.0_92
+Stylesheet compilation time: 741.1868ms
+Processing file:/C:/_github/lexjansen/define-xml-2.1-stylesheets/localization/./xml/definev21-adam.xml
+Using parser com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser
+Building tree for file:/C:/_github/lexjansen/define-xml-2.1-stylesheets/localization/./xml/definev21-adam.xml using class net.sf.saxon.tree.tiny.TinyBuilder
+Tree built in 22.2995ms
+Tree size: 5183 nodes, 14908 characters, 3029 attributes
+Execution time: 234.0648ms
+Memory used: 127Mb
 
 Transform -s:.\xml\definev21-sdtm.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-sdtm.parameters_ja.html  
-java net.sf.saxon.Transform -s:.\xml\definev21-sdtm.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-sdtm.parameters_ja.html -versionmsg:off interfaceLang=ja displayCommentsTable="1" displayPrefix="1" displayLengthDFormatSD="1" 
+java net.sf.saxon.Transform -t -s:.\xml\definev21-sdtm.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-sdtm.parameters_ja.html -versionmsg:off interfaceLang=ja displayCommentsTable="1" displayPrefix="1" displayLengthDFormatSD="1" 
+SaxonJ-HE 11.5 from Saxonica
+Java version 1.8.0_92
+Stylesheet compilation time: 724.2677ms
+Processing file:/C:/_github/lexjansen/define-xml-2.1-stylesheets/localization/./xml/definev21-sdtm.xml
+Using parser com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser
+Building tree for file:/C:/_github/lexjansen/define-xml-2.1-stylesheets/localization/./xml/definev21-sdtm.xml using class net.sf.saxon.tree.tiny.TinyBuilder
+Tree built in 31.4443ms
+Tree size: 5825 nodes, 12875 characters, 3809 attributes
+Building tree for file:/C:/_github/lexjansen/define-xml-2.1-stylesheets/localization/stylesheets/dictionary.xml using class net.sf.saxon.tree.tiny.TinyBuilder
+Tree built in 5.1059ms
+Tree size: 775 nodes, 1036 characters, 252 attributes
+Execution time: 386.7824ms
+Memory used: 32Mb
 
 Transform -s:.\xml\definev21-sdtm.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-sdtm.parameters_zh.html  
-java net.sf.saxon.Transform -s:.\xml\definev21-sdtm.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-sdtm.parameters_zh.html -versionmsg:off interfaceLang=zh displayCommentsTable="1" displayPrefix="1" displayLengthDFormatSD="1" 
+java net.sf.saxon.Transform -t -s:.\xml\definev21-sdtm.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-sdtm.parameters_zh.html -versionmsg:off interfaceLang=zh displayCommentsTable="1" displayPrefix="1" displayLengthDFormatSD="1" 
+SaxonJ-HE 11.5 from Saxonica
+Java version 1.8.0_92
+Stylesheet compilation time: 696.6261ms
+Processing file:/C:/_github/lexjansen/define-xml-2.1-stylesheets/localization/./xml/definev21-sdtm.xml
+Using parser com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser
+Building tree for file:/C:/_github/lexjansen/define-xml-2.1-stylesheets/localization/./xml/definev21-sdtm.xml using class net.sf.saxon.tree.tiny.TinyBuilder
+Tree built in 23.1126ms
+Tree size: 5825 nodes, 12875 characters, 3809 attributes
+Building tree for file:/C:/_github/lexjansen/define-xml-2.1-stylesheets/localization/stylesheets/dictionary.xml using class net.sf.saxon.tree.tiny.TinyBuilder
+Tree built in 3.5244ms
+Tree size: 775 nodes, 1036 characters, 252 attributes
+Execution time: 390.9385ms
+Memory used: 32Mb
 
 Transform -s:.\xml\definev21-sdtm.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-sdtm.parameters_en.html  
-java net.sf.saxon.Transform -s:.\xml\definev21-sdtm.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-sdtm.parameters_en.html -versionmsg:off interfaceLang=en displayCommentsTable="1" displayPrefix="1" displayLengthDFormatSD="1" 
+java net.sf.saxon.Transform -t -s:.\xml\definev21-sdtm.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-sdtm.parameters_en.html -versionmsg:off interfaceLang=en displayCommentsTable="1" displayPrefix="1" displayLengthDFormatSD="1" 
+SaxonJ-HE 11.5 from Saxonica
+Java version 1.8.0_92
+Stylesheet compilation time: 714.2786ms
+Processing file:/C:/_github/lexjansen/define-xml-2.1-stylesheets/localization/./xml/definev21-sdtm.xml
+Using parser com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser
+Building tree for file:/C:/_github/lexjansen/define-xml-2.1-stylesheets/localization/./xml/definev21-sdtm.xml using class net.sf.saxon.tree.tiny.TinyBuilder
+Tree built in 22.386ms
+Tree size: 5825 nodes, 12875 characters, 3809 attributes
+Execution time: 298.3406ms
+Memory used: 24Mb
 
 Transform -s:.\xml\definev21-sdtm.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-sdtm.parameters_default.html  
-java net.sf.saxon.Transform -s:.\xml\definev21-sdtm.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-sdtm.parameters_default.html -versionmsg:off displayCommentsTable="1" displayPrefix="1" displayLengthDFormatSD="1" 
+java net.sf.saxon.Transform -t -s:.\xml\definev21-sdtm.xml -xsl:.\stylesheets\define2-1.xsl -o:.\html\definev21-sdtm.parameters_default.html -versionmsg:off displayCommentsTable="1" displayPrefix="1" displayLengthDFormatSD="1" 
+SaxonJ-HE 11.5 from Saxonica
+Java version 1.8.0_92
+Stylesheet compilation time: 684.1184ms
+Processing file:/C:/_github/lexjansen/define-xml-2.1-stylesheets/localization/./xml/definev21-sdtm.xml
+Using parser com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser
+Building tree for file:/C:/_github/lexjansen/define-xml-2.1-stylesheets/localization/./xml/definev21-sdtm.xml using class net.sf.saxon.tree.tiny.TinyBuilder
+Tree built in 22.2994ms
+Tree size: 5825 nodes, 12875 characters, 3809 attributes
+Execution time: 303.4397ms
+Memory used: 24Mb
 
