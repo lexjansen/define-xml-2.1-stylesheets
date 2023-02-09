@@ -2,7 +2,7 @@
 
 set project=.
 
-set classpath=%classpath%;..\lib\SaxonHE10-8J\saxon-he-10.8.jar
+set classpath=%classpath%;..\lib\SaxonHE11-5J\saxon-he-11.5.jar
 
 set stylesheet=%project%\stylesheets\define2-1.xsl
 
@@ -58,11 +58,11 @@ set param4=displayLengthDFormatSD="0"
 
 
 if (%param1%)==() (
-  echo java net.sf.saxon.Transform -s:%2 -xsl:%3 -o:%4 -versionmsg:off %param2% %param3% %param4% >> %log%
-  java net.sf.saxon.Transform -s:%2 -xsl:%3 -o:%4 -versionmsg:off %param2% %param3% %param4% >> %log% 2>&1
+  echo java net.sf.saxon.Transform -t  -s:%2 -xsl:%3 -o:%4 -versionmsg:off %param2% %param3% %param4% >> %log%
+  java net.sf.saxon.Transform -t -s:%2 -xsl:%3 -o:%4 -versionmsg:off %param2% %param3% %param4% >> %log% 2>&1
   ) else (
-  echo java net.sf.saxon.Transform -s:%2 -xsl:%3 -o:%4 -versionmsg:off %param1:"=% %param2% %param3% %param4% >> %log%
-  java net.sf.saxon.Transform -s:%2 -xsl:%3 -o:%4 -versionmsg:off %param1:"=% %param2% %param3% %param4% >> %log% 2>&1
+  echo java net.sf.saxon.Transform -t -s:%2 -xsl:%3 -o:%4 -versionmsg:off %param1:"=% %param2% %param3% %param4% >> %log%
+  java net.sf.saxon.Transform -t -s:%2 -xsl:%3 -o:%4 -versionmsg:off %param1:"=% %param2% %param3% %param4% >> %log% 2>&1
   )
 echo.>> %log%
 goto :EOF
@@ -84,11 +84,11 @@ set param4=displayLengthDFormatSD="1"
 
 
 if (%param1%)==() (
-  echo java net.sf.saxon.Transform -s:%2 -xsl:%3 -o:%4 -versionmsg:off %param2% %param3% %param4% >> %log%
-  java net.sf.saxon.Transform -s:%2 -xsl:%3 -o:%4 -versionmsg:off %param2% %param3% %param4% >> %log% 2>&1
+  echo java net.sf.saxon.Transform -t -s:%2 -xsl:%3 -o:%4 -versionmsg:off %param2% %param3% %param4% >> %log%
+  java net.sf.saxon.Transform -t -s:%2 -xsl:%3 -o:%4 -versionmsg:off %param2% %param3% %param4% >> %log% 2>&1
   ) else (
-  echo java net.sf.saxon.Transform -s:%2 -xsl:%3 -o:%4 -versionmsg:off %param1:"=% %param2% %param3% %param4% >> %log%
-  java net.sf.saxon.Transform -s:%2 -xsl:%3 -o:%4 -versionmsg:off %param1:"=% %param2% %param3% %param4% >> %log% 2>&1
+  echo java net.sf.saxon.Transform -t -s:%2 -xsl:%3 -o:%4 -versionmsg:off %param1:"=% %param2% %param3% %param4% >> %log%
+  java net.sf.saxon.Transform -t -s:%2 -xsl:%3 -o:%4 -versionmsg:off %param1:"=% %param2% %param3% %param4% >> %log% 2>&1
   )
 echo.>> %log%
 goto :EOF
