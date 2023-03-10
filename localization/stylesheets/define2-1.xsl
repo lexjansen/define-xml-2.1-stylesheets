@@ -65,7 +65,8 @@
   <!-- Author:      Lex Jansen, CDISC Data Exchange Standards Team                                               -->
   <!--                                                                                                           -->
   <!-- Changes:                                                                                                  -->
-  <!--   2023-03-10 - Support one level of subclass nesting (Credits: Pierre Dostie)                             -->
+  <!--   2023-03-10 - Display ValueList Description as tooltip on VLM link                                       -->
+  <!--              - Support one level of subclass nesting (Credits: Pierre Dostie)                             -->
   <!--   2023-02-08 - Add decodes to WhereClause when variables have the codelist in VLM                         -->
   <!--                Issue #9: Stylesheet does not display decodes in WhereClause                               -->
   <!--                Credits: Pierre Dostie (PDO)                                                               -->
