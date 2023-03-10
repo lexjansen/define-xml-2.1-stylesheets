@@ -1760,6 +1760,8 @@
                 <xsl:when test="$ItemDef/def:ValueListRef/@ValueListOID">
                   <xsl:value-of select="$ItemDef/@Name"/>
                   
+                  <xsl:variable name="ValueListDesciption" select="$g_seqValueListDefs[@OID = $ItemDef/def:ValueListRef/@ValueListOID]/odm:Description/odm:TranslatedText"/>                  
+                  
                   <xsl:choose>
                     <xsl:when test="$g_seqValueListDefs[@OID = $ItemDef/def:ValueListRef/@ValueListOID]">
                       <xsl:element name="span">
@@ -1769,6 +1771,9 @@
                           <xsl:attribute name="id">
                             <xsl:value-of select="../@OID"/>.<xsl:value-of select="$ItemDef/@OID"/>
                           </xsl:attribute>
+                          <xsl:if test="$ValueListDesciption">
+                            <xsl:attribute name="title"><xsl:value-of select="$ValueListDesciption"/></xsl:attribute>
+                          </xsl:if>
                           <xsl:text>VLM</xsl:text>
                         </a>
                       </xsl:element>

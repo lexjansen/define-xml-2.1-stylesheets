@@ -93,6 +93,9 @@ Notes:
       <!-- ************************************************************************************************************************ -->
 
       <def:ValueListDef OID="VL.LB.LBORRES">
+        <Description>
+          <TranslatedText xml:lang="en">Example Value List Description</TranslatedText>
+        </Description>
         <ItemRef ItemOID="IT.LB.LBORRES.SET1.LBSPEC.BLOOD" OrderNumber="1" Mandatory="No">
           <def:WhereClauseRef WhereClauseOID="WC.LB.LBTESTCD.SET1.LBSPEC.BLOOD"/>
         </ItemRef>
