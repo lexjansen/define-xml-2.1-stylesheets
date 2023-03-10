@@ -1018,13 +1018,13 @@
   <!-- **************************************************** -->
   <xsl:template name="tableStandards">
     
-    <h1 class="invisible"><xsl:value-of select="$term_STANDARDS_FOR_STUDY"/> <xsl:value-of
+    <h1 class="invisible"><xsl:value-of select="$term_STANDARDS_FOR_STUDY"/><xsl:text> </xsl:text><xsl:value-of
       select="/odm:ODM/odm:Study/odm:GlobalVariables/odm:StudyName"/></h1>
  
     <div class="containerbox">
       
       <table id="Standards_Table" summary="Standards">
-        <caption class="header"><xsl:value-of select="$term_STANDARDS_FOR_STUDY"/> <xsl:value-of
+        <caption class="header"><xsl:value-of select="$term_STANDARDS_FOR_STUDY"/><xsl:text> </xsl:text><xsl:value-of
           select="/odm:ODM/odm:Study/odm:GlobalVariables/odm:StudyName"/></caption>
         <tr class="header">
           <th scope="col"><xsl:value-of select="$term_STANDARD"/></th>
