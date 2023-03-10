@@ -14,6 +14,7 @@ call :transform adam-ja %project%\xml\definev21-adam.xml %stylesheet% %project%\
 call :transform adam-zh %project%\xml\definev21-adam.xml %stylesheet% %project%\html\definev21-adam_zh.html "interfaceLang=zh"
 call :transform adam-en %project%\xml\definev21-adam.xml %stylesheet% %project%\html\definev21-adam_en.html "interfaceLang=en"
 call :transform adam    %project%\xml\definev21-adam.xml %stylesheet% %project%\html\definev21-adam_default.html
+call :transform adam    %project%\xml\definev21-adam_issue09.xml %stylesheet% %project%\html\definev21-adam_issue09.html
 
 call :transform sdtm-ja %project%\xml\definev21-sdtm.xml %stylesheet% %project%\html\definev21-sdtm_ja.html "interfaceLang=ja"
 call :transform sdtm-zh %project%\xml\definev21-sdtm.xml %stylesheet% %project%\html\definev21-sdtm_zh.html "interfaceLang=zh"
