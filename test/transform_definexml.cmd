@@ -31,11 +31,11 @@ goto :EOF
 
 :transform
 
-echo **** %1 ****
-echo **** xml:   %2 ****
-echo **** xsl:   %3 ****
-echo **** html:  %4 ****
-echo **** param: %5 ****
+echo **** %1
+echo **** xml:   %2
+echo **** xsl:   %3
+echo **** html:  %4
+echo **** param: %5
 echo.
 
 echo Transform -s:%2 -xsl:%3 -o:%4  >> %log% 2>&1
