@@ -44,9 +44,9 @@
   <xsl:param name="nCodeListItemDisplay" select="5"/>
   
   <!-- Maximum Number of CheckValue values in the WhereClauseDefs attached to an item so that  
-       Decode values will be displayed in the "Where Condition" column (default=10) 
+       Decode values will be displayed in the "Where Condition" column (default=5) 
        To display all Decode values, specify 999; to display no Decode values, specify 0. -->
-  <xsl:param name="nCheckValueDisplay" select="15"/>
+  <xsl:param name="nCheckValueDisplay" select="5"/>
 
   <!-- Display Methods table (0/1)? -->
   <xsl:param name="displayMethodsTable" select="1"/>
