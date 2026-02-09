@@ -70,6 +70,7 @@
   <!-- Author:      Lex Jansen, CDISC Data Exchange Standards Team                                               -->
   <!--                                                                                                           -->
   <!-- Changes:                                                                                                  -->
+  <!--   2026-02-09 - Added nCheckValueDisplay parameter                                                         -->
   <!--   2023-03-10 - Display ValueList Description as tooltip on VLM link                                       -->
   <!--              - Support one level of subclass nesting (Credits: Pierre Dostie)                             -->
   <!--   2023-02-08 - Add decodes to WhereClause when variables have the codelist in VLM                         -->
@@ -208,7 +209,7 @@
   
   <!-- Global Variables (constants) -->
 
-  <xsl:variable name="STYLESHEET_VERSION" select="'2023-03-10'"/>
+  <xsl:variable name="STYLESHEET_VERSION" select="'2026-02-09'"/>
   
   <!-- XSLT 1.0 does not support the function 'upper-case()', so we need to use the 'translate() function, 
     which uses the variables $lowercase and $uppercase. -->
