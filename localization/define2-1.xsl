@@ -1957,7 +1957,7 @@
                 
                 <xsl:variable name="displayDecodes">
                   <xsl:choose>
-                    <xsl:when test="$n_checkvalues &gt;= $nCheckValueDisplay">0</xsl:when>
+                    <xsl:when test="$n_checkvalues &gt; $nCheckValueDisplay">0</xsl:when>
                     <xsl:otherwise>1</xsl:otherwise>
                   </xsl:choose>
                 </xsl:variable>
