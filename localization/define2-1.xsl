@@ -43,6 +43,11 @@
        To display all CodeListItems, specify 999; to display no CodeListItems, specify 0. -->
   <xsl:param name="nCodeListItemDisplay" select="5"/>
   
+  <!-- Maximum Number of CheckValue values in the WhereClauseDefs attached to an item so that  
+       Decode values will be displayed in the "Where Condition" column (default=5) 
+       To display all Decode values, specify 999; to display no Decode values, specify 0. -->
+  <xsl:param name="nCheckValueDisplay" select="5"/>
+
   <!-- Display Methods table (0/1)? -->
   <xsl:param name="displayMethodsTable" select="1"/>
 
@@ -65,6 +70,7 @@
   <!-- Author:      Lex Jansen, CDISC Data Exchange Standards Team                                               -->
   <!--                                                                                                           -->
   <!-- Changes:                                                                                                  -->
+  <!--   2026-02-09 - Added nCheckValueDisplay parameter                                                         -->
   <!--   2023-03-10 - Display ValueList Description as tooltip on VLM link                                       -->
   <!--              - Support one level of subclass nesting (Credits: Pierre Dostie)                             -->
   <!--   2023-02-08 - Add decodes to WhereClause when variables have the codelist in VLM                         -->
@@ -203,7 +209,7 @@
   
   <!-- Global Variables (constants) -->
 
-  <xsl:variable name="STYLESHEET_VERSION" select="'2023-03-10'"/>
+  <xsl:variable name="STYLESHEET_VERSION" select="'2026-02-09'"/>
   
   <!-- XSLT 1.0 does not support the function 'upper-case()', so we need to use the 'translate() function, 
     which uses the variables $lowercase and $uppercase. -->
@@ -1947,12 +1953,27 @@
                 <xsl:variable name="whereOP" select="$whereDef/odm:RangeCheck/@Comparator"/>
                 <xsl:variable name="whereVal" select="$whereDef/odm:RangeCheck/odm:CheckValue"/>
                 
+                <xsl:variable name="n_checkvalues" select="count($whereDef/odm:RangeCheck/odm:CheckValue)"/>
+                
+                <xsl:variable name="displayDecodes">
+                  <xsl:choose>
+                    <xsl:when test="$n_checkvalues &gt; $nCheckValueDisplay">0</xsl:when>
+                    <xsl:otherwise>1</xsl:otherwise>
+                  </xsl:choose>
+                </xsl:variable>
+                
                 <xsl:element name="tr">
                   <xsl:attribute name="class">vlm<xsl:text> </xsl:text><xsl:value-of select="$VLMClass"/><xsl:text> </xsl:text><xsl:value-of select="$ParentItemDefOID"/>
                   </xsl:attribute>
                   
                   <!-- Source Variable column -->
                   <td>  
+                    
+                    <!--
+                    <xsl:value-of select="$n_checkvalues"/> - 
+                    <xsl:value-of select="$nCheckValueDisplay"/> - 
+                    <xsl:value-of select="$displayDecodes"/>  
+                    -->
                     
                     <xsl:if test="$isSuppQual='0'">
                     </xsl:if>
@@ -1999,7 +2020,7 @@
                       <xsl:call-template name="displayWhereClause">
                         <xsl:with-param name="ValueItemRef" select="$ItemRef"/>
                         <xsl:with-param name="ItemGroupLink" select="$ValueItemGroupOID"/>
-                        <xsl:with-param name="decode" select="1"/>
+                        <xsl:with-param name="decode" select="$displayDecodes"/>
                         <xsl:with-param name="break" select="1"/>
                       </xsl:call-template>
                       
@@ -3444,6 +3465,7 @@
     
     <xsl:variable name="ValueRef" select="$ValueItemRef"/>
     <xsl:variable name="Nwhereclauses" select="count(./def:WhereClauseRef)"/>
+    
     
     <xsl:for-each select="$ValueRef/def:WhereClauseRef">
     
