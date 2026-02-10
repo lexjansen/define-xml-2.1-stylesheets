@@ -6,13 +6,6 @@ set stylesheet=%project%\localization\define2-1.xsl
 set log="%~n0.log"
 echo.>%log%
 
-call :transform adam    %project%\test\xml\definev21-adam_issue15.xml %stylesheet% %project%\test\html\definev21-adam_issue15.html
-call :transform adam    %project%\test\xml\definev21-adam_issue15.xml %stylesheet% %project%\test\html\definev21-adam_issue15_all_decodes.html "nCheckValueDisplay=999"
-call :transform adam    %project%\test\xml\definev21-adam_issue15.xml %stylesheet% %project%\test\html\definev21-adam_issue15_no_decodes.html "nCheckValueDisplay=0"
-call :transform sdtm    %project%\test\xml\definev21-sdtm_issue15.xml %stylesheet% %project%\test\html\definev21-sdtm_issue15.html "nCheckValueDisplay=3"
-
-call :transform adam    %project%\test\xml\definev21-adam_issue09.xml %stylesheet% %project%\test\html\definev21-adam_issue09.html
-
 call :transform adam-ja %project%\test\xml\definev21-adam.xml %stylesheet% %project%\test\html\definev21-adam_ja.html "interfaceLang=ja"
 call :transform adam-zh %project%\test\xml\definev21-adam.xml %stylesheet% %project%\test\html\definev21-adam_zh.html "interfaceLang=zh"
 call :transform adam-en %project%\test\xml\definev21-adam.xml %stylesheet% %project%\test\html\definev21-adam_en.html "interfaceLang=en"
@@ -32,6 +25,14 @@ call :transform_params sdtm-ja %project%\test\xml\definev21-sdtm.xml %stylesheet
 call :transform_params sdtm-zh %project%\test\xml\definev21-sdtm.xml %stylesheet% %project%\test\html\definev21-sdtm.parameters_zh.html "interfaceLang=zh"
 call :transform_params sdtm-en %project%\test\xml\definev21-sdtm.xml %stylesheet% %project%\test\html\definev21-sdtm.parameters_en.html "interfaceLang=en"
 call :transform_params sdtm    %project%\test\xml\definev21-sdtm.xml %stylesheet% %project%\test\html\definev21-sdtm.parameters_default.html
+
+
+call :transform adam    %project%\test\xml\definev21-adam_issue09.xml %stylesheet% %project%\test\html\issue09\definev21-adam_issue09.html
+
+call :transform adam    %project%\test\xml\definev21-adam_issue15.xml %stylesheet% %project%\test\html\issue15\definev21-adam_issue15.html
+call :transform adam    %project%\test\xml\definev21-adam_issue15.xml %stylesheet% %project%\test\html\issue15\definev21-adam_issue15_all_decodes.html "nCheckValueDisplay=999"
+call :transform adam    %project%\test\xml\definev21-adam_issue15.xml %stylesheet% %project%\test\html\issue15\definev21-adam_issue15_no_decodes.html "nCheckValueDisplay=0"
+call :transform sdtm    %project%\test\xml\definev21-sdtm.xml         %stylesheet% %project%\test\html\issue15\definev21-sdtm_issue15.html "nCheckValueDisplay=3"
 
 goto :EOF
 
