@@ -5,6 +5,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Project Overview
 
 Define-XML v2.1 stylesheets for transforming CDISC Define-XML documents into human-readable HTML format. The project includes two versions:
+
 - **cdisc-2019**: Original CDISC published stylesheet (May 2019)
 - **localization**: Enhanced version with internationalization support (English, Chinese, Japanese)
 
@@ -18,6 +19,7 @@ transform_definexml.cmd
 ```
 
 This script:
+
 - Transforms test XML files in `test/xml/` to HTML in `test/html/`
 - Tests multiple language variants (en, ja, zh)
 - Tests various parameter combinations (with/without parameters table)
@@ -53,19 +55,21 @@ java -cp lib\SaxonHE12-9J\saxon-he-12.9.jar net.sf.saxon.Transform ^
 ### Stylesheets
 
 **localization/define2-1.xsl** (4833 lines)
+
 - Main localized stylesheet supporting XSLT 1.0
 - Loads translations from `localization/dictionary.xml`
 - Supports Define-XML 2.1 specification including Analysis Results Metadata v1.0 extension
 - Generates HTML 4.01 Strict output
 
 **cdisc-2019/stylesheets/define2-1.xsl** (4305 lines)
+
 - Original CDISC stylesheet without localization
 - Otherwise similar functionality to localization version
 
 ### Key XSLT Parameters
 
 | Parameter | Default | Description |
-|-----------|---------|-------------|
+| ----------- | --------- | ------------- |
 | `interfaceLang` | `en` | UI language: en, ja, zh (localization stylesheet only) |
 | `nCodeListItemDisplay` | `5` | Number of codelist items in Controlled Terms column (999=all, 0=none) |
 | `nCheckValueDisplay` | `5` | Max CheckValue decodes in WhereClause to show Decode values (999=all, 0=none) |
@@ -77,6 +81,7 @@ java -cp lib\SaxonHE12-9J\saxon-he-12.9.jar net.sf.saxon.Transform ^
 ### Translation System
 
 `localization/dictionary.xml` contains UI term translations structured as:
+
 ```xml
 <entry term="English Term">
   <TranslatedText xml:lang="zh">Chinese translation</TranslatedText>
@@ -88,7 +93,7 @@ The stylesheet loads this dictionary using `document()` function and looks up te
 
 ### Test Structure
 
-```
+```structure
 test/
   xml/                    # Input Define-XML documents
     definev21-adam.xml
@@ -107,9 +112,11 @@ test/
 ## Recent Features
 
 ### Issue #15: WhereClause Decodes (Feb 2026)
+
 Added `nCheckValueDisplay` parameter to control when decode values are displayed in the "Where Condition" column. When a WhereClauseDef has more than `nCheckValueDisplay` CheckValue elements, decodes are not shown (only codes). This prevents cluttered displays when there are many where clause values.
 
 ### Issue #9: VLM WhereClause Support (Feb 2023)
+
 Enhanced stylesheet to display decodes in WhereClause even when variables have their codelist defined in Value Level Metadata (VLM) rather than at the variable level.
 
 ## Development Notes
